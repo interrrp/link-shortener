@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+body {
+    font-family: "IBM Plex Mono", sans-serif;
+
+    background-color: black;
+    color: white;
+}
+
+main {
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+button, input {
+    font-family: "IBM Plex Mono", sans-serif;
+}
+
+input {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    outline: none;
+
+    user-select: none;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#shorten-form {
+    margin-top: 2rem;
+}
+
+#shorten-form__url {
+    width: 20vw;
+}
+
+#info, #info > a {
+    color: greenyellow;
+    margin-top: 1rem;
+}
+
+#info > a {
+    text-decoration: none;
+}
+
+#info > a:hover {
+    text-decoration: underline;
+}
