@@ -25,9 +25,12 @@ async def get_link(link_id: str, response: Response) -> RedirectResponse | dict:
     """Redirect to the URL for a link ID."""
 
     try:
+        # Search for the link with the ID
         link = [link for link in links if link.id == link_id][0]
+
         return RedirectResponse(link.url)
     except IndexError:
+        # If the link ID doesn't exist, return a 404
         response.status_code = http.HTTPStatus.NOT_FOUND
         return {"error": "Link not found"}
 

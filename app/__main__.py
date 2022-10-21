@@ -5,8 +5,8 @@ from fastapi.staticfiles import StaticFiles
 from . import links
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static", html=True))
 app.include_router(links.router)
+app.mount("/", StaticFiles(directory="static", html=True))
 
 
 if __name__ == "__main__":
