@@ -14,6 +14,8 @@ pip3 install -r requirements.txt
 python3 -m app
 ```
 
+The app should be running on `http://localhost:8000`.
+
 ## 🧑‍💻 Contribution
 
 Feel free to contribute to the project. You can do this by opening an issue or
