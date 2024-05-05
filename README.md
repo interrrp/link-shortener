@@ -4,7 +4,7 @@ Shortens links.
 
 ## 📦 Usage
 
-Clone the [repository](https://github.com/1nter-p/link-shortener), install
+Clone the [repository](https://github.com/interrrp/link-shortener), install
 dependencies and run.
 
 ```sh
@@ -21,10 +21,9 @@ The app should be running on `http://localhost:8000`.
 Feel free to contribute to the project. You can do this by opening an issue or
 pull request.
 
-PRs must be formatted with [Black](https://github.com/psf/black) and
-linted with [flake8](https://github.com/PyCQA/flake8). The
-[pre-commit config](.pre-commit-config.yaml) usually takes care of this.
+PRs must be linted and formatted with [Ruff](https://github.com/astral-sh/ruff).
+The [pre-commit config](.pre-commit-config.yaml) takes care of this.
 
 ## 📝 License
 
-This project is licensed under the [MIT license](LICENSE)
+This project is licensed under the [MIT license](LICENSE).
