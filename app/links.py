@@ -21,7 +21,7 @@ links: list[Link] = []
 
 
 @router.get("/{link_id}")
-async def get_link(link_id: str, response: Response) -> RedirectResponse | dict:
+async def get_link(link_id: str, response: Response) -> Response:
     """Redirect to the URL for a link ID."""
 
     try:
